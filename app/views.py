@@ -60,7 +60,7 @@ def upload_pic(request):
             p = subprocess.Popen('alpr -c kz -p kz -j '+pathForImage, stdout = subprocess.PIPE, shell=True)
             (output, err) = p.communicate()
             p_status = p.wait()
-            main_out = put.decode().split('\n')[0]            
+            main_out = output.decode().split('\n')[0]            
             data = (json.loads(main_out))['results']
             # print(data)
             if(len(data) == 0 ):
