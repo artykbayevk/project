@@ -3,7 +3,6 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseForbidden
-from forms import ImageUploadForm
 from models import ExampleModel
 import shutil
 import glob
@@ -13,6 +12,12 @@ import numpy as np
 import subprocess
 import json
 
+
+from django import forms
+
+class ImageUploadForm(forms.Form):
+    """Image upload form."""
+    image = forms.ImageField()
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
