@@ -22,6 +22,16 @@ class ImageUploadForm(forms.Form):
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+from django.db import models
+
+class Document(models.Model):
+    document = models.FileField(upload_to='img/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+class ExampleModel(models.Model):
+    model_pic = models.ImageField(upload_to = 'img/')
+
+
 
 def index(request):
     return render(request,'index.html')
