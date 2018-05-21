@@ -1,0 +1,28 @@
+{
+  "name": "s",
+  "version": "1.0.0",
+  "lockfileVersion": 1,
+  "requires": true,
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-animate": "1.5.8",
+    "angular-resource": "1.5.8",
+    "angularjs-toaster": "^2.2.0",
+    "ng-file-upload": "^12.2.13"
+  },
+  "description": "asd",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "123"
+  },
+  "keywords": [
+    "123"
+  ],
+  "author": "123",
+  "license": "ISC"
+}
