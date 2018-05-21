@@ -4,7 +4,6 @@ myproject
 __pycache__
 db.sqlite3
 .DS_Store
-/static/img/*.jpg
 /static/node_modules
 /app/migrations
 env/
